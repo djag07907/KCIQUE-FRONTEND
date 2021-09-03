@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    app:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="48dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/bakeryproduct_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bakeryproduct_name"
+            android:layout_width="236dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toRightOf="@+id/bakeryproduct_image"
+            app:layout_constraintStart_toEndOf="@+id/bakeryproduct_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bakeryproduct_detail"
+            android:layout_width="236dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/bakeryproduct_image"
+            app:layout_constraintStart_toEndOf="@+id/bakeryproduct_image"
+            app:layout_constraintTop_toBottomOf="@+id/bakeryproduct_name" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bakeryproduct_name"
+            app:layout_constraintVertical_bias="0.698"
+            app:srcCompat="@drawable/ic_add" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

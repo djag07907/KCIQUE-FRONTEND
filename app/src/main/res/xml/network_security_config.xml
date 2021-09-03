@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network_security_config>
+    <domain_config cleartextTrafficPermitted="false" >
+                <!-- change IP according to PC IP (do not touch Port   -->
+        <domain includeSubdomains="true">192.168.1.35:8080</domain>
+    </domain_config>
+</network_security_config>
